@@ -691,6 +691,11 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer-logo-socials {
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
   .footer-logo-section {
     margin-right: 120px;
   }
