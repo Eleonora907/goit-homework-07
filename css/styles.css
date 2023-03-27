@@ -385,8 +385,8 @@ body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-color: var(--color-navy-blue);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -432,6 +432,8 @@ body {
 }
 @media screen and (min-width: 769px) {
   .hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1018,15 +1020,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
+  /* margin-left: auto; */
   padding: 0;
-  position: relative;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   height: 24px;
   width: 24px;
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   cursor: pointer;
   outline: none;
 }
@@ -1041,7 +1045,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 24px;
+  padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 24px;
@@ -1099,12 +1103,22 @@ body {
 }
 .mobile-menu-socials {
   margin-top: 48px;
-  gap: 56px;
+}
+@media screen and (min-width: 428px) {
+  .mobile-menu-socials {
+    gap: 56px;
+  }
 }
 .contacts-link-mobile-menu {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
   line-height: calc(40 / 36);
+}
+
+@media screen and (min-width: 428px) {
+  .contacts-link-mobile-menu {
+    font-size: 36px;
+  }
 }
 .email-link-mobile-menu {
   font-size: 20px;
@@ -1116,4 +1130,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 104px;
+}
+.mobile-menu .current-mobile-menu {
+  color: var(--color-iris);
 }
